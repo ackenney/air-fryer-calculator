@@ -16,6 +16,7 @@ document.getElementById("calculateButton").addEventListener("click", function() 
     var newTemp = ovenTemp -25;
     var newTime = ovenTime *.80; 
 
+    // Rounding new air fryer temp and time
     var airTemp = newTemp.toFixed(0);
     var airTime = newTime.toFixed(0);
 

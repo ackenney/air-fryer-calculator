@@ -1,3 +1,4 @@
+// Script takes in oven time and oven temp and caluclates the air fryer time and temp
 document.getElementById("calculateButton").addEventListener("click", function() {
   
     var ovenTemp = parseFloat(document.getElementById("ovenTemp").value);
@@ -12,7 +13,7 @@ document.getElementById("calculateButton").addEventListener("click", function() 
     return;
     }
 
-    // calculating new air fyer time and temp
+    // calcluating new air fryer time and temp
     var newTemp = ovenTemp -25;
     var newTime = ovenTime *.80; 
 
@@ -20,8 +21,7 @@ document.getElementById("calculateButton").addEventListener("click", function() 
     var airTemp = newTemp.toFixed(0);
     var airTime = newTime.toFixed(0);
 
-
-    if (ovenTemp > 475 || ovenTemp < 120) {
+     if (ovenTemp > 475 || ovenTemp < 120) {
         errorType = "Keep temperature in the range of 120°f - 475°f";
         newTemp = 0;
         newTime = 0;
@@ -33,6 +33,7 @@ document.getElementById("calculateButton").addEventListener("click", function() 
     }else {
         errorType = "";
     }
+
 
     document.getElementById("airTemp").textContent = "Air Fry Temp: " + airTemp + " °f";
     document.getElementById("airTime").textContent = "Air Fry Time: " + airTime + " minutes";

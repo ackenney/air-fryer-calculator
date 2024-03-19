@@ -1,10 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Air Fryer Calculator</title>
+ 
 </head>
 <body>
+<div class="container">
+    <h1>Air Fryer Calculator</h1>
     <div class="input-wrapper">
         <label for="ovenTemp">Oven temperature (°f):</label>
         <input type="number" id="ovenTemp" placeholder="Enter the oven temperature" min="0" step="any">
@@ -14,7 +19,6 @@
         <input type="number" id="ovenTime" placeholder="Enter the cook time" min="0" step="any">
     </div>
     <button id="calculateButton" class="calculateButton"></i>Calculate</button>
-    
     <div class="result-container" id="resultContainer">
         <div class="air-temp" id="airTemp"></div>
         <div class="air-time" id="airTime"></div>
@@ -23,7 +27,7 @@
     </div>
 </div>
 
-<script src="assets/js/app.js"></script>
+<script src="/assets/js/app.js"></script>
 
 </body>
 </html>
